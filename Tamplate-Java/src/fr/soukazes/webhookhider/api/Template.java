@@ -17,7 +17,7 @@ public class Template {
 		System.out.println("Enter your message: ");
 		String message = scan.nextLine();
 		String postData = "code=" + URLEncoder.encode(code, "UTF-8") +"&message=" + URLEncoder.encode(message, "UTF-8");
-		HttpURLConnection co = (HttpURLConnection)new URL("http://sktools.sytes.net/webhookhider/API.php").openConnection();
+		HttpURLConnection co = (HttpURLConnection)new URL("http://sktools.sytes.net/webhookhider/API").openConnection();
 		co.setRequestMethod("POST");
 		co.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
 		co.setDoOutput(true);
